@@ -44,6 +44,11 @@
     margin-right: 30px;
     position: relative;
   }
+
+  li:last-of-type {
+    margin-right: 0;
+  }
+
   a {
     text-transform: uppercase;
     font-weight: 500;

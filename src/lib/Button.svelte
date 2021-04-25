@@ -22,6 +22,7 @@
     line-height: 1;
     color: var(--header-primary);
     transition: box-shadow 0.35s 0s ease;
+    white-space: nowrap;
   }
 
   a:hover {

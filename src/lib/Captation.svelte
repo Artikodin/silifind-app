@@ -9,13 +9,14 @@
 
 <style>
   div {
+    position: relative;
     padding: 104px 0 40px 0;
     display: grid;
-    grid-template-columns: 1fr 540px 540px 1fr;
+    grid-template-columns: 15px 1fr 540px 540px 1fr 15px;
     grid-template-rows: auto auto;
     grid-template-areas:
-      ". title img img"
-      ". description img img";
+      ". . title img img img"
+      ". . description img img img";
   }
 
   h1 {
@@ -41,5 +42,22 @@
     height: 100%;
     border-radius: 10px 0 0 10px;
     object-fit: cover;
+  }
+
+  @media (max-width: 768px) {
+    img {
+      position: absolute;
+      z-index: -1;
+      filter: blur(3px) brightness(40%);
+      bottom: 35px;
+      border-radius: 10px;
+    }
+    div {
+      grid-template-columns: 15px auto 15px;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        ". title ."
+        ". description .";
+    }
   }
 </style>

@@ -25,10 +25,15 @@
     display: flex;
     height: 100%;
     width: 100%;
+
+    padding: 0 15px;
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: center;
   }
   .product-detail {
-    margin: auto;
-    height: 600px;
+    min-height: 600px;
     width: min(100%, 1080px);
     border-radius: 20px;
     display: flex;
@@ -37,7 +42,7 @@
   }
 
   img {
-    height: 100%;
+    min-height: 100%;
     width: 400px;
     border-radius: 20px;
     object-fit: cover;
@@ -48,8 +53,8 @@
     flex: 1;
     padding: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 36px 36px auto 60px;
+    grid-template-columns: auto min-content;
+    grid-template-rows: min-content 36px auto 60px;
     grid-template-areas:
       "title price"
       "time ."
@@ -103,5 +108,21 @@
     font-size: 28px;
     font-weight: 400;
     line-height: 1.3;
+  }
+
+  @media (max-width: 768px) {
+    .wrapper {
+      align-items: flex-start;
+      padding-top: 104px;
+    }
+    .product-detail {
+      flex-direction: column;
+    }
+
+    img {
+      width: 100%;
+      min-height: auto;
+      height: 400px;
+    }
   }
 </style>

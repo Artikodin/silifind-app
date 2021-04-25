@@ -14,7 +14,7 @@
 
 <style>
   .product-item {
-    height: 200px;
+    min-height: 200px;
     width: min(100%, 1080px);
     border-radius: 20px;
     display: flex;
@@ -35,15 +35,16 @@
     height: 200px;
     width: 200px;
     border-radius: 20px;
+    object-fit: cover;
   }
 
   .annexe {
-    color: white;
+    color: var(--header-primary);
     flex: 1;
     padding: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 36px auto;
+    grid-template-columns: auto min-content;
+    grid-template-rows: min-content auto;
     grid-template-areas:
       "title price"
       "time button";
@@ -87,5 +88,20 @@
     font-weight: 400;
     line-height: 1;
     color: var(--header-secondary);
+  }
+
+  @media (max-width: 768px) {
+    .product-item {
+      flex-direction: column;
+    }
+
+    img {
+      width: auto;
+    }
+
+    .annexe {
+      padding: 20px;
+      row-gap: 30px;
+    }
   }
 </style>

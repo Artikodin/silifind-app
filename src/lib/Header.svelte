@@ -29,6 +29,10 @@
     top: 0;
     left: 0;
     right: 0;
+
+    padding: 0 15px;
+    box-sizing: border-box;
+    z-index: 1;
   }
 
   div {
