@@ -1,23 +1,27 @@
 <script>
   import Button from "./Button.svelte";
+
+  export let img = {};
+  export let description = "";
+  export let title = "";
+  export let price = "";
+  export let time = "";
+  export let links = {};
 </script>
 
 <div class="wrapper">
   <div class="product-detail">
     <div class="aspect-ratio">
-      <img src="https://picsum.photos/400/400" alt="" />
+      <img src={img.url} alt={img.alt} />
     </div>
     <div class="annexe">
-      <h3>Ryzen 7 5800X</h3>
-      <p class="price">1000 <small>€</small></p>
-      <time>1 heure</time>
+      <h3>{title}</h3>
+      <p class="price">{price}&#8239;<small>€</small></p>
+      <time>{time}</time>
       <p class="description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
-        obcaecati eos dolore similique asperiores corporis sapiente expedita
-        ipsam saepe velit numquam, nam mollitia necessitatibus harum totam
-        ducimus corrupti est perferendis.
+        {description}
       </p>
-      <Button />
+      <Button url={links.url} text={links.text} />
     </div>
   </div>
 </div>

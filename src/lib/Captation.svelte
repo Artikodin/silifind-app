@@ -1,10 +1,15 @@
+<script>
+  export let title = "";
+  export let description = "";
+  export let img = {};
+</script>
+
 <div>
-  <h1>Trouvez les meilleurs offres du marché</h1>
+  <h1>{title}</h1>
   <p>
-    Chiné des produits en avant premiere a des prix competitifs. Ne perdez plus
-    votre temps entre differentes annonce. Un endroit pour les emplettes.
+    {description}
   </p>
-  <img src="https://picsum.photos/1440/600" alt="" />
+  <img src={img.src} alt={img.alt} />
 </div>
 
 <style>

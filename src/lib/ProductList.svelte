@@ -1,12 +1,12 @@
 <script>
   import ProductItem from "./ProductItem.svelte";
 
-  let productItems = ["1", "2"];
+  export let productItems = [];
 </script>
 
 <div>
-  {#each productItems as productItems, i}
-    <ProductItem />
+  {#each productItems as productItem, i}
+    <ProductItem {...productItem} />
   {/each}
 </div>
 

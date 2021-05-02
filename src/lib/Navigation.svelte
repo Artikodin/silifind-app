@@ -16,7 +16,7 @@
 
 <nav class="navigation">
   <ul>
-    {#each navItems as { title }, i}
+    {#each navItems as { title, items }, i}
       <li>
         <a
           href="#"
@@ -28,6 +28,7 @@
           on:mouseout={handleMouseOut}
           {title}
           {openedDropdown}
+          navItems={items}
         />
       </li>
     {/each}

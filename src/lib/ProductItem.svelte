@@ -1,14 +1,21 @@
 <script>
   import Button from "./Button.svelte";
+
+  export let img = {};
+  export let url = "";
+  export let title = "";
+  export let price = "";
+  export let time = "";
+  export let links = {};
 </script>
 
-<a class="product-item" sveltekit:noscroll href="/product">
-  <img src="https://picsum.photos/400/400" alt="" />
+<a class="product-item" sveltekit:noscroll href={url}>
+  <img src={img.url} alt={img.alt} />
   <div class="annexe">
-    <h3>Ryzen 7 5800X</h3>
-    <p>1000 <small>€</small></p>
-    <time>1 heure</time>
-    <Button />
+    <h3>{title}</h3>
+    <p>{price}&#8239;<small>€</small></p>
+    <time>{time}</time>
+    <Button url={links.url} text={links.text} />
   </div>
 </a>
 

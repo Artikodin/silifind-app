@@ -2,7 +2,7 @@
   import Navigation from "./Navigation.svelte";
   import NavigationMobile from "./NavigationMobile/index.svelte";
 
-  let navItems = [{ title: "GPU" }, { title: "CPU" }, { title: "CONSOLE" }];
+  export let navItems = [];
 </script>
 
 <header>

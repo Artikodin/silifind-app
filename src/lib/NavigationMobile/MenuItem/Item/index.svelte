@@ -1,13 +1,13 @@
 <script>
   export let title = "";
-  export let items = [];
+  export let products = [];
 </script>
 
 <div class="wrapper">
   <p>{title}</p>
   <ul>
-    {#each items as { value, url }, i}
-      <li><a href={url}>{value}</a></li>
+    {#each products as { name, url }, i}
+      <li><a href={url}>{name}</a></li>
     {/each}
   </ul>
 </div>

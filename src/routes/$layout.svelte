@@ -1,11 +1,13 @@
 <script>
   import Header from "$lib/Header.svelte";
   import Footer from "$lib/Footer/index.svelte";
+  import { navItems } from "../dataMock";
+
   import "$lib/style/global.svelte";
 </script>
 
 <div>
-  <Header />
+  <Header {navItems} />
   <main>
     <slot />
   </main>

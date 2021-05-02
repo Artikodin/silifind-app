@@ -1,6 +1,8 @@
 <script>
   export let openedDropdown;
   export let title;
+
+  export let navItems = [];
 </script>
 
 <div
@@ -11,24 +13,16 @@
 >
   <div class="dropdown-list">
     <div class="list-wrapper">
-      <div class="list">
-        <p>AMD</p>
-        <ul>
-          <li>RX 6800</li>
-          <li>RX 6700</li>
-          <li>RX 6500</li>
-          <li>RX 6400</li>
-        </ul>
-      </div>
-      <div class="list">
-        <p>AMD</p>
-        <ul>
-          <li>RX 6800</li>
-          <li>RX 6700</li>
-          <li>RX 6500</li>
-          <li>RX 6400</li>
-        </ul>
-      </div>
+      {#each navItems as { title, products }}
+        <div class="list">
+          <p>{title}</p>
+          <ul>
+            {#each products as { url, name }}
+              <li><a href={url}>{name}</a></li>
+            {/each}
+          </ul>
+        </div>
+      {/each}
     </div>
   </div>
 </div>

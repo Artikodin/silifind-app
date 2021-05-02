@@ -3,12 +3,10 @@
   import Item from "./Item/index.svelte";
   import { quintInOut } from "svelte/easing";
 
+  export let title = "";
+  export let items = [];
+
   let isOpen = false;
-  let items = [
-    { value: "link1", url: "#" },
-    { value: "link2", url: "#" },
-    { value: "link3", url: "#" }
-  ];
 
   const wipe = (node, { duration }) => ({
     duration,
@@ -24,7 +22,7 @@
 </script>
 
 <div class="wrapper" on:click={() => (isOpen = !isOpen)}>
-  <p>Items</p>
+  <p>{title}</p>
   <div class="img-wrapper" class:img-open={isOpen}>
     <img src={arrow} alt="" />
   </div>
@@ -32,7 +30,9 @@
 
 {#if isOpen}
   <div class="items" transition:wipe={{ duration: 250 }}>
-    <Item title="test" {items} />
+    {#each items as { title, products }}
+      <Item {title} {products} />
+    {/each}
   </div>
 {/if}
 
