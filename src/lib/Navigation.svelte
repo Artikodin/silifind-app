@@ -14,7 +14,7 @@
   };
 </script>
 
-<nav>
+<nav class="navigation">
   <ul>
     {#each navItems as { title }, i}
       <li>
@@ -59,5 +59,11 @@
   }
   a:hover {
     color: var(--header-secondary);
+  }
+
+  @media (max-width: 768px) {
+    .navigation {
+      display: none;
+    }
   }
 </style>

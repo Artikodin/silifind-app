@@ -113,7 +113,8 @@
   @media (max-width: 768px) {
     .wrapper {
       align-items: flex-start;
-      padding-top: 104px;
+      padding: 105px 15px;
+      height: auto;
     }
     .product-detail {
       flex-direction: column;
@@ -122,7 +123,7 @@
     img {
       width: 100%;
       min-height: auto;
-      height: 400px;
+      height: 300px;
     }
   }
 </style>

@@ -2,7 +2,7 @@
   import Button from "./Button.svelte";
 </script>
 
-<a class="product-item" sveltekit:prefetch href="/product">
+<a class="product-item" sveltekit:noscroll href="/product">
   <img src="https://picsum.photos/400/400" alt="" />
   <div class="annexe">
     <h3>Ryzen 7 5800X</h3>

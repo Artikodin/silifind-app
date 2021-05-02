@@ -1,5 +1,6 @@
 <script>
   import Navigation from "./Navigation.svelte";
+  import NavigationMobile from "./NavigationMobile/index.svelte";
 
   let navItems = [{ title: "GPU" }, { title: "CPU" }, { title: "CONSOLE" }];
 </script>
@@ -8,6 +9,7 @@
   <div>
     <a href="/"><h1>Silifind</h1></a>
     <Navigation {navItems} />
+    <NavigationMobile {navItems} />
   </div>
 </header>
 
