@@ -59,7 +59,7 @@
     align-self: start;
     justify-self: start;
 
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 500;
     line-height: 1;
   }
@@ -69,14 +69,14 @@
 
     align-self: start;
 
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 400;
     line-height: 1;
     color: var(--text-primary);
   }
 
   small {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 
   time {
@@ -84,7 +84,7 @@
     align-self: start;
     justify-self: start;
 
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 400;
     line-height: 1;
     color: var(--header-secondary);

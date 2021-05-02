@@ -66,7 +66,7 @@
   }
 
   p {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
     color: var(--header-secondary);
     margin-bottom: 10px;
@@ -74,7 +74,7 @@
 
   ul {
     list-style: none;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
     color: var(--text-primary);
     white-space: nowrap;

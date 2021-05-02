@@ -19,6 +19,8 @@
 
   p {
     padding: 10px 15px;
+    font-size: 1.6em;
+    font-weight: 500;
   }
 
   ul {
@@ -34,5 +36,8 @@
     background-color: var(--bg-tertiary);
     border-radius: 50px;
     display: block;
+
+    font-size: 1.4em;
+    font-weight: 500;
   }
 </style>

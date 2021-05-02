@@ -43,6 +43,10 @@
     --purple: #7289da;
   }
 
+  :global(html) {
+    font-size: 10px;
+  }
+
   :global(html),
   :global(body),
   :global(#svelte) {
@@ -120,5 +124,16 @@
   :global(ul) {
     margin: 0;
     padding: 0;
+  }
+
+  @media (max-width: 768px) {
+    :global(html) {
+      font-size: 8px;
+    }
+  }
+  @media (max-width: 425px) {
+    :global(html) {
+      font-size: 5px;
+    }
   }
 </style>

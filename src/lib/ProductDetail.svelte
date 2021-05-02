@@ -4,7 +4,9 @@
 
 <div class="wrapper">
   <div class="product-detail">
-    <img src="https://picsum.photos/400/400" alt="" />
+    <div class="aspect-ratio">
+      <img src="https://picsum.photos/400/400" alt="" />
+    </div>
     <div class="annexe">
       <h3>Ryzen 7 5800X</h3>
       <p class="price">1000 <small>€</small></p>
@@ -41,9 +43,16 @@
     background: #2f3136;
   }
 
-  img {
+  .aspect-ratio {
     min-height: 100%;
     width: 400px;
+    position: relative;
+  }
+
+  img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
     border-radius: 20px;
     object-fit: cover;
   }
@@ -70,7 +79,7 @@
     align-self: start;
     justify-self: start;
 
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 600;
     line-height: 1;
   }
@@ -79,14 +88,14 @@
     grid-area: price;
     align-self: start;
 
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: 500;
     line-height: 1;
     color: var(--text-primary);
   }
 
   small {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 
   time {
@@ -94,7 +103,7 @@
     align-self: start;
     justify-self: start;
 
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 400;
     line-height: 1;
     color: var(--header-secondary);
@@ -105,7 +114,7 @@
     align-self: start;
 
     color: var(--text-primary);
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: 400;
     line-height: 1.3;
   }
@@ -118,12 +127,13 @@
     }
     .product-detail {
       flex-direction: column;
+      min-height: auto;
     }
 
-    img {
+    .aspect-ratio {
       width: 100%;
       min-height: auto;
-      height: 300px;
+      padding-bottom: 56.25%;
     }
   }
 </style>

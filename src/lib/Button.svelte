@@ -14,10 +14,10 @@
       rgba(0, 0, 0, 0.15) 100%
     );
     border-radius: 7px;
-    padding: 15px 20px;
+    padding: 1.5rem 2rem;
 
     text-decoration: none;
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 600;
     line-height: 1;
     color: var(--header-primary);

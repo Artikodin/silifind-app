@@ -80,6 +80,8 @@
     width: 100vw;
     height: 100vh;
     z-index: 2;
+
+    font-size: 10px;
   }
 
   .menu-bg {
@@ -153,6 +155,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    font-size: 1.4em;
   }
 
   @media (max-width: 768px) {

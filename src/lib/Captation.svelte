@@ -21,15 +21,15 @@
 
   h1 {
     grid-area: title;
-    font-size: 65px;
-    line-height: 65px;
+    font-size: 6.5rem;
+    line-height: 1;
     font-weight: 500;
     padding-right: 20px;
   }
 
   p {
     grid-area: description;
-    font-size: 33px;
+    font-size: 3.3rem;
     line-height: 1.2;
     font-weight: 400;
     padding: 20px 20px 0 0;

@@ -47,6 +47,11 @@
     margin-bottom: 5px;
   }
 
+  p {
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+
   .img-wrapper {
     background-color: var(--bg-primary);
     height: 45px;
