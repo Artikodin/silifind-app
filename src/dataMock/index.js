@@ -1,7 +1,7 @@
 export let productItems = [
   {
     img: { url: "https://picsum.photos/400/400", alt: "" },
-    url: "/product",
+    url: "/product/1",
     title: "Ryzen 7 5800X",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
         obcaecati eos dolore similique asperiores corporis sapiente expedita
@@ -10,14 +10,13 @@ export let productItems = [
     price: "1000",
     time: "1 heure",
     links: {
-      url:
-        "https://www.cdiscount.com/informatique/cartes-graphiques/msi-carte-graphique-geforce-gt-710-2go-ddr3/f-10767-gt7102gd3hlp.html#mpos=0|cd",
+      url: "https://www.cdiscount.com/informatique/cartes-graphiques/msi-carte-graphique-geforce-gt-710-2go-ddr3/f-10767-gt7102gd3hlp.html#mpos=0|cd",
       text: "J'en profite"
     }
   },
   {
     img: { url: "https://picsum.photos/400/400", alt: "" },
-    url: "/product",
+    url: "/product/1",
     title: "Ryzen 7 5800X",
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis,
         obcaecati eos dolore similique asperiores corporis sapiente expedita
@@ -26,8 +25,7 @@ export let productItems = [
     price: "1000",
     time: "1 heure",
     links: {
-      url:
-        "https://www.cdiscount.com/informatique/cartes-graphiques/msi-carte-graphique-geforce-gt-710-2go-ddr3/f-10767-gt7102gd3hlp.html#mpos=0|cd",
+      url: "https://www.cdiscount.com/informatique/cartes-graphiques/msi-carte-graphique-geforce-gt-710-2go-ddr3/f-10767-gt7102gd3hlp.html#mpos=0|cd",
       text: "J'en profite"
     }
   }
