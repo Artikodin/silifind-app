@@ -1,5 +1,5 @@
 <script>
-  import arrow from "./arrow.svg";
+  import arrow from "$assets/images/arrow.svg";
   import Item from "./Item/index.svelte";
   import { quintInOut } from "svelte/easing";
 

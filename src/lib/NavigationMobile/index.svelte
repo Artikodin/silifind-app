@@ -1,5 +1,5 @@
 <script>
-  import discord from "../Footer/discord.svg";
+  import discord from "$assets/images/discord.svg";
   import MenuItem from "./MenuItem/index.svelte";
   import { slide, fade } from "./transitions";
 

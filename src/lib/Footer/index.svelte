@@ -1,5 +1,5 @@
 <script>
-  import discord from "./discord.svg";
+  import discord from "$assets/images/discord.svg";
 </script>
 
 <footer>
