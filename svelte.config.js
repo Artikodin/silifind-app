@@ -1,8 +1,8 @@
 /** @type {import('@sveltejs/kit').Config} */
-const path = require("path");
-const vercel = require("@sveltejs/adapter-vercel");
+import path from "path";
+import vercel from "@sveltejs/adapter-vercel";
 
-module.exports = {
+export default {
   kit: {
     // hydrate the <div id="svelte"> element in src/app.html
     target: "#svelte",
