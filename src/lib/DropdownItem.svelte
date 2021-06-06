@@ -22,7 +22,7 @@
             {/each}
             {#if isMoreToSee}
               <li class="more-to-see">
-                <a on:click href={`/seller/${name.slugify("-")}`}>Voir plus</a>
+                <a on:click href={`/serie/${name.slugify("-")}`}>Voir plus</a>
               </li>
             {/if}
           </ul>
