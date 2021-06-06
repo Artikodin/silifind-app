@@ -25,14 +25,10 @@
 <script>
   import ProductList from "$lib/ProductList.svelte";
   import Captation from "$lib/Captation.svelte";
-  import { productItems, captation } from "../dataMock";
+  import { captation } from "../dataMock";
 
   export let products = [];
 </script>
 
-<Captation
-  title={captation.title}
-  description={captation.description}
-  img={captation.img}
-/>
+<Captation title={captation.title} description={captation.description} />
 <ProductList productItems={products} />

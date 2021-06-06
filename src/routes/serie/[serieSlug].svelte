@@ -44,5 +44,5 @@
   export let sellerName = "";
 </script>
 
-<Captation title={sellerName} img={captation.img} />
+<Captation title={sellerName} />
 <ProductList productItems={products} />

@@ -1,7 +1,6 @@
 <script>
   export let title = "";
   export let description = "";
-  export let img = {};
 </script>
 
 <div>
@@ -9,7 +8,10 @@
   <p>
     {description}
   </p>
-  <img src={img.src} alt={img.alt} />
+  <img
+    src={"https://cdn.mos.cms.futurecdn.net/4SQBx6PXfEMhitPwz32eFM.jpg"}
+    alt={"nvidia graphic card"}
+  />
 </div>
 
 <style>
