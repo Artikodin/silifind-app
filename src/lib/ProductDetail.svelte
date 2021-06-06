@@ -1,27 +1,27 @@
 <script>
   import Button from "./Button.svelte";
 
-  export let img = {};
-  export let description = "";
-  export let title = "";
+  export let name = "";
   export let price = "";
-  export let time = "";
-  export let links = {};
+  export let url = "";
 </script>
 
 <div class="wrapper">
   <div class="product-detail">
     <div class="aspect-ratio">
-      <img src={img.url} alt={img.alt} />
+      <img
+        src="https://www.techspot.com/images2/news/ts3_thumbs/2016/05/2016-05-10-ts3_thumbs-d33.jpg"
+        alt="nvidia"
+      />
     </div>
     <div class="annexe">
-      <h3>{title}</h3>
+      <h3>{name}</h3>
       <p class="price">{price}&#8239;<small>€</small></p>
-      <time>{time}</time>
-      <p class="description">
+      <!-- <time>{time}</time> -->
+      <!-- <p class="description">
         {description}
-      </p>
-      <Button url={links.url} text={links.text} />
+      </p> -->
+      <Button {url} text={"j'en profite"} />
     </div>
   </div>
 </div>
@@ -29,7 +29,7 @@
 <style>
   .wrapper {
     display: flex;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 
     padding: 0 15px;

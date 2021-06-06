@@ -1,12 +1,13 @@
 <script>
   import Button from "./Button.svelte";
 
+  export let id = "";
   export let url = "";
   export let name = "";
   export let price = "";
 </script>
 
-<a class="product-item" sveltekit:noscroll href={url}>
+<a class="product-item" sveltekit:noscroll href={`/product/${id}`}>
   <img
     src="https://www.techspot.com/images2/news/ts3_thumbs/2016/05/2016-05-10-ts3_thumbs-d33.jpg"
     alt="nvidia"
