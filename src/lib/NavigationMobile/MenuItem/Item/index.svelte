@@ -1,14 +1,20 @@
 <script>
-  export let title = "";
-  export let products = [];
+  export let name = "";
+  export let sellers = [];
+  export let isMoreToSee = false;
 </script>
 
 <div class="wrapper">
-  <p>{title}</p>
+  <p>{name}</p>
   <ul>
-    {#each products as { name, url }, i}
-      <li><a href={url}>{name}</a></li>
+    {#each sellers.slice(0, 4) as { product, id }, i}
+      <li><a on:click href={`/product/${id}`}>{product[0]}</a></li>
     {/each}
+    {#if isMoreToSee}
+      <li>
+        <a on:click href={`/serie/${name.slugify("-")}`}>Voir plus</a>
+      </li>
+    {/if}
   </ul>
 </div>
 

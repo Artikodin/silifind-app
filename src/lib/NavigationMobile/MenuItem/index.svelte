@@ -3,8 +3,8 @@
   import Item from "./Item/index.svelte";
   import { quintInOut } from "svelte/easing";
 
-  export let title = "";
-  export let items = [];
+  export let name = "";
+  export let series = [];
 
   let isOpen = false;
 
@@ -22,7 +22,7 @@
 </script>
 
 <div class="wrapper" on:click={() => (isOpen = !isOpen)}>
-  <p>{title}</p>
+  <p>{name}</p>
   <div class="img-wrapper" class:img-open={isOpen}>
     <img src={arrow} alt="" />
   </div>
@@ -30,8 +30,8 @@
 
 {#if isOpen}
   <div class="items" transition:wipe={{ duration: 250 }}>
-    {#each items as { title, products }}
-      <Item {title} {products} />
+    {#each series as { name, sellers, isMoreToSee }}
+      <Item {name} {sellers} {isMoreToSee} on:click />
     {/each}
   </div>
 {/if}

@@ -16,7 +16,6 @@
     const [name, price, url] = product;
     const formatSeller = { id, name, price, url };
 
-    console.log(formatSeller);
     return {
       props: {
         seller: formatSeller

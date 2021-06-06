@@ -3,7 +3,7 @@
   import MenuItem from "./MenuItem/index.svelte";
   import { slide, fade } from "./transitions";
 
-  export let navItems = [];
+  export let products = [];
 
   let isOpen = false;
   let duration = 250;
@@ -25,8 +25,8 @@
         <button type="button" class="close" on:click={() => (isOpen = false)} />
       </div>
       <div class="body">
-        {#each navItems as { title, items }}
-          <MenuItem {title} {items} />
+        {#each products as { name, series }}
+          <MenuItem {name} {series} on:click={() => (isOpen = false)} />
         {/each}
       </div>
       <div class="footer">
