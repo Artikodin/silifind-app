@@ -1,7 +1,7 @@
 <script>
   import DropdownItem from "./DropdownItem.svelte";
 
-  export let navItems = [];
+  export let products = [];
 
   let openedDropdown = null;
 
@@ -16,24 +16,28 @@
 
 <nav class="navigation">
   <ul>
-    {#each navItems as { title, items }, i}
+    {#each products as { name: title }, i}
       <li>
         <a
           href="#"
           on:mouseover={handleMouseOver(title)}
           on:mouseout={handleMouseOut}>{title}</a
         >
-        <DropdownItem
-          on:mouseover={handleMouseOver(title)}
-          on:mouseout={handleMouseOut}
-          {title}
-          {openedDropdown}
-          navItems={items}
-        />
       </li>
     {/each}
   </ul>
 </nav>
+
+{#each products as { name: title, series }, i}
+  <DropdownItem
+    on:mouseover={handleMouseOver(title)}
+    on:mouseout={handleMouseOut}
+    on:click={handleMouseOut}
+    {title}
+    {openedDropdown}
+    {series}
+  />
+{/each}
 
 <style>
   ul {

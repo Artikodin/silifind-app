@@ -2,7 +2,7 @@
   export let openedDropdown;
   export let title;
 
-  export let navItems = [];
+  export let series = [];
 </script>
 
 <div
@@ -13,13 +13,18 @@
 >
   <div class="dropdown-list">
     <div class="list-wrapper">
-      {#each navItems as { title, products }}
+      {#each series as { name, sellers, isMoreToSee }}
         <div class="list">
-          <p>{title}</p>
+          <p>{name}</p>
           <ul>
-            {#each products as { url, name }}
-              <li><a href={url}>{name}</a></li>
+            {#each sellers as { id, product }}
+              <li><a on:click href={`/product/${id}`}>{product[0]}</a></li>
             {/each}
+            {#if isMoreToSee}
+              <li class="more-to-see">
+                <a on:click href={`/seller/${name.slugify("-")}`}>Voir plus</a>
+              </li>
+            {/if}
           </ul>
         </div>
       {/each}
@@ -29,14 +34,11 @@
 
 <style>
   .dropdown-wrapper {
-    padding-top: 30px;
-    width: auto;
+    padding-top: 64px;
+    width: 100%;
     position: absolute;
     display: none;
-
-    top: 100%;
-    left: 50%;
-    transform: translate3d(-50%, 0, 0);
+    top: 0;
   }
 
   .dropdown-list {
@@ -53,10 +55,12 @@
 
   .list-wrapper {
     display: flex;
+    flex-wrap: wrap;
   }
 
-  .list:not(:last-of-type) {
-    margin-right: 60px;
+  .list {
+    padding: 10px;
+    flex: 1 1 0;
   }
 
   p {
@@ -68,12 +72,15 @@
 
   ul {
     list-style: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
     font-weight: 600;
     color: var(--text-primary);
     white-space: nowrap;
   }
-
+  .more-to-see {
+    margin: 15px 0 0 0 !important;
+  }
   li {
     margin: 5px 0;
   }

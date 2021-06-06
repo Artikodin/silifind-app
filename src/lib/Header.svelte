@@ -2,14 +2,14 @@
   import Navigation from "./Navigation.svelte";
   import NavigationMobile from "./NavigationMobile/index.svelte";
 
-  export let navItems = [];
+  export let products = [];
 </script>
 
 <header>
   <div>
     <a href="/"><h1>Silifind</h1></a>
-    <Navigation {navItems} />
-    <NavigationMobile {navItems} />
+    <Navigation {products} />
+    <NavigationMobile {products} />
   </div>
 </header>
 
@@ -45,5 +45,6 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    position: relative;
   }
 </style>
