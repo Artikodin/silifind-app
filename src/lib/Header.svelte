@@ -1,19 +1,24 @@
 <script>
   import Navigation from "./Navigation.svelte";
   import NavigationMobile from "./NavigationMobile/index.svelte";
+  import logo from "$assets/images/logo-silifind.svg";
 
   export let products = [];
 </script>
 
 <header>
   <div>
-    <a href="/"><h1>Silifind</h1></a>
+    <a href="/"><img src={logo} alt="silifind" /></a>
     <Navigation {products} />
     <NavigationMobile {products} />
   </div>
 </header>
 
 <style>
+  img {
+    width: auto;
+    height: 50px;
+  }
   h1 {
     font-weight: 600;
     font-size: 32px;

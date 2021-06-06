@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Layer_1" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 937.4 263.9"
+	 style="enable-background:new 0 0 937.4 263.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_2_);}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_3_);}
+	.st6{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_4_);}
+	.st7{fill:none;}
+	.st8{fill:#F2F2F2;enable-background:new    ;}
+	.st9{font-family:'Circo';}
+	.st10{font-size:135.827px;}
+	.st11{letter-spacing:4;}
+	.st12{fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_5_);}
+</style>
+<v:documentProperties  v:langID="1036" v:metric="true" v:viewMarkup="false">
+	<v:userDefs>
+		<v:ud  v:nameU="msvNoAutoConnect" v:val="VT0(1):26"></v:ud>
+	</v:userDefs>
+</v:documentProperties>
+<g class="st0">
+	<v:userDefs>
+		<v:ud  v:nameU="msvVisioCreated" v:prompt="" v:val="VT0(0):26"></v:ud>
+	</v:userDefs>
+	
+		<v:pageProperties  height="19.685" v:drawingScale="0.0393701" v:drawingUnits="24" v:pageScale="0.0393701" v:shadowOffsetX="8.50394" v:shadowOffsetY="-8.50394" width="19.685">
+		</v:pageProperties>
+	<g id="shape4-1" class="st1">
+		<v:userDefs>
+			<v:ud  v:nameU="Background" v:val="VT0(0):26"></v:ud>
+			<v:ud  v:nameU="visVersion" v:val="VT0(15):26"></v:ud>
+			<v:ud  v:nameU="msvShapeCategories" v:prompt="" v:val="VT4(DoNotContain)"></v:ud>
+			<v:ud  v:nameU="msvVisioCreated" v:prompt="" v:val="VT0(0):26"></v:ud>
+		</v:userDefs>
+		<rect x="6.3" y="5.2" class="st2" width="1417.3" height="1417.3"/>
+	</g>
+</g>
+<g>
+	
+		<v:pageProperties  v:drawingScale="0.0393701" v:drawingUnits="24" v:pageScale="0.0393701" v:shadowOffsetX="8.50394" v:shadowOffsetY="-8.50394">
+		</v:pageProperties>
+	<g id="shape2-10" transform="translate(643.49,-771.01)">
+		
+			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-446.6654" y1="1995.4612" x2="-445.9572" y2="1995.4612" gradientTransform="matrix(102.2476 117.7544 102.2476 -117.7544 -158920.5156 288429.5)">
+			<stop  offset="0" style="stop-color:#52FF20"/>
+			<stop  offset="0.995" style="stop-color:#00FFCC"/>
+		</linearGradient>
+		<path class="st3" d="M-523.8,841.2l-51.2,29.3l0.3,59l50.9,29.7l50.9-29.7l0.3-58.9L-523.8,841.2z"/>
+	</g>
+	<g id="shape3-14" transform="translate(725.551,-671.416)">
+		
+			<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-516.1655" y1="1897.6317" x2="-515.4574" y2="1897.6317" gradientTransform="matrix(-131.402 -130.655 -75.865 226.301 75639.9688 -495991.8125)">
+			<stop  offset="0" style="stop-color:#A5A5A5"/>
+			<stop  offset="1" style="stop-color:#FFFFFF"/>
+		</linearGradient>
+		<path class="st4" d="M-509.9,824.5l-68.1,38.9l0-46.4l86.6-49.8V745l-107.4,61.6v123.5l20.8-12.6l86.6-49.4V847l-18.7,10.9
+			l-67.9,39.1v-15.1l68-39L-509.9,824.5z M-491.5,800.7v-17.3l-20.2,11.4l-48.4,28.3l0,17.3l51.6-29.8L-491.5,800.7z"/>
+	</g>
+	<g id="shape4-18" transform="translate(1783.39,1193.44) rotate(120)">
+		
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="821.7032" y1="1351.0032" x2="822.4113" y2="1351.0032" gradientTransform="matrix(8.158175e-05 260.63 151.05 -8.132235e-05 -204050.5625 -212107.9062)">
+			<stop  offset="0" style="stop-color:#A5A5A5"/>
+			<stop  offset="1" style="stop-color:#FFFFFF"/>
+		</linearGradient>
+		<path class="st5" d="M7.2,1993.5l-68.1,38.9l0-46.4l86.6-49.8l0-22.1l-107,61.3l0.1,123.3l20.3-12.1l86.6-49.4l0-21.2L7,2026.9
+			l-67.9,39.1l0-15.1l68-39L7.2,1993.5z M25.7,1969.7l0-17.3l-20.2,11.4l-48.4,28.3l0,17.3l51.6-29.8L25.7,1969.7z"/>
+	</g>
+	<g id="shape5-21" transform="translate(1792.71,-233.651) rotate(60)">
+		
+			<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="463.0953" y1="2107.7952" x2="463.8035" y2="2107.7952" gradientTransform="matrix(130.8132 -130.3149 -75.5249 -225.7122 97989.7109 537656.375)">
+			<stop  offset="0" style="stop-color:#A5A5A5"/>
+			<stop  offset="1" style="stop-color:#FFFFFF"/>
+		</linearGradient>
+		<path class="st6" d="M-541.1,1586.3l-68.1,38.9l0-46.4l86.6-49.8v-22.1l-107,61.3l0.1,123.3l20.3-12.1l86.6-49.4v-21.2l-18.7,10.9
+			l-67.9,39.1v-15.1l68-39L-541.1,1586.3z M-522.6,1562.5v-17.3l-20.2,11.4l-48.4,28.3l0,17.3l51.6-29.8L-522.6,1562.5z"/>
+	</g>
+</g>
+<g id="shape7-3" transform="translate(375.591,-453.543)">
+	<desc>ILIFIND</desc>
+	<v:textBlock  v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"></v:textBlock>
+	<v:textRect  cx="387.638" cy="1337.95" height="158.74" width="775.28"></v:textRect>
+	<rect x="-77.9" y="546.6" class="st7" width="658.1" height="134.8"/>
+	<text transform="matrix(1 0 0 1 0.3722 654.7142)" class="st8 st9 st10 st11">ILIFIND<v:paragraph  v:horizAlign="1"></v:paragraph><v:tabList></v:tabList></text>
+</g>
+<g id="shape8-6" transform="translate(322.016,-485.008)">
+	
+		<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="-124.3028" y1="1708.3611" x2="-123.4539" y2="1708.3611" gradientTransform="matrix(7.500740e-15 163.0017 122.4964 -9.980976e-15 -209285.8594 20809.291)">
+		<stop  offset="0" style="stop-color:#FBF6F5"/>
+		<stop  offset="1" style="stop-color:#D8D8D8"/>
+	</linearGradient>
+	<path class="st12" d="M25.1,564.8c0.1,4.5-3.6,8.3-8.1,8.3c-4.5,0.1-8.3-3.6-8.3-8.1c0-0.1,0-0.2,0-0.2c-0.1-4.5,3.6-8.3,8.1-8.3
+		c4.5-0.1,8.3,3.6,8.3,8.1C25.1,564.7,25.1,564.7,25.1,564.8z M-69.5,668.7v16.9l66.1,0.5c21.6-0.8,38.5-19.1,37.6-40.7
+		c-0.8-20.9-17.9-37.5-38.8-37.7H-36c-9.5-0.4-16.9-8.5-16.5-18c0.4-8.9,7.5-16.1,16.5-16.5H2c4.7,8.2,15.1,11.1,23.3,6.4
+		c8.2-4.7,11.1-15.1,6.4-23.3c-4.7-8.2-15.1-11.1-23.3-6.4c-2.5,1.4-4.6,3.5-6.1,5.9h-39.5c-19.1,1.1-33.6,17.5-32.5,36.6
+		c1,17.5,15,31.5,32.5,32.5h32.5c12.1,0.1,21.8,10,21.7,22c-0.1,11.5-9,20.9-20.5,21.7H-69.5z"/>
+</g>
+</svg>
