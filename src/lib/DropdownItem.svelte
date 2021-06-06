@@ -17,7 +17,7 @@
         <div class="list">
           <p>{name}</p>
           <ul>
-            {#each sellers as { id, product }}
+            {#each sellers.slice(0, 4) as { id, product }}
               <li><a on:click href={`/product/${id}`}>{product[0]}</a></li>
             {/each}
             {#if isMoreToSee}

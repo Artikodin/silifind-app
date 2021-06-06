@@ -1,21 +1,21 @@
 <script>
   import Button from "./Button.svelte";
 
-  export let img = {};
   export let url = "";
-  export let title = "";
+  export let name = "";
   export let price = "";
-  export let time = "";
-  export let links = {};
 </script>
 
 <a class="product-item" sveltekit:noscroll href={url}>
-  <img src={img.url} alt={img.alt} />
+  <img
+    src="https://www.techspot.com/images2/news/ts3_thumbs/2016/05/2016-05-10-ts3_thumbs-d33.jpg"
+    alt="nvidia"
+  />
   <div class="annexe">
-    <h3>{title}</h3>
+    <h3>{name}</h3>
     <p>{price}&#8239;<small>€</small></p>
-    <time>{time}</time>
-    <Button url={links.url} text={links.text} />
+    <!-- <time>{time}</time> -->
+    <Button {url} text={"J'en profite"} />
   </div>
 </a>
 

@@ -1,5 +1,5 @@
 <script context="module">
-  export async function load({ page, fetch }) {
+  export async function load({ page, fetch, session, context }) {
     const url = `https://app.silifind.fr/config`;
     const res = await fetch(url);
 
@@ -16,7 +16,7 @@
 
             const isMoreToSee = sellersBrand.length > 4;
 
-            return { name, sellers: sellersBrand.slice(0, 4), isMoreToSee };
+            return { name, sellers: sellersBrand, isMoreToSee };
           })
           .filter(({ sellers }) => sellers.length > 0);
         return { name, series: seriesWithSellerName };
@@ -24,6 +24,9 @@
 
       return {
         props: {
+          products: productsUpdated
+        },
+        context: {
           products: productsUpdated
         }
       };
